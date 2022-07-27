@@ -9,10 +9,17 @@
     ```yml
     'rules': { 'at-rule-no-unknown': [true, { 'ignoreAtRules': ['tailwind'] }] }
     ```
-  <!-- 
 
-  This template should help get you started developing with Svelte and TypeScript in Vite.
+## Design
 
+### Theme
+
+- Color Palette
+  - [Tailwindcss](https://tailwindcss.com/docs/customizing-colors)
+- Icons
+  - [Material Design Icons](https://materialdesignicons.com/)
+
+<!-- 
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
@@ -56,5 +63,5 @@ If you have state that's important to retain within a component, consider creati
 // An extremely simple external store
 import { writable } from 'svelte/store'
 export default writable(0)
-``` -->
-````
+``` 
+```` -->
