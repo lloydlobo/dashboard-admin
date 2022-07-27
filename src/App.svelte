@@ -5,7 +5,7 @@
 
 <main>
   <div class="design-bg">
-    <div class="design-bg__img -z-50 brightness-50" />
+    <div class="design-bg-img -z-50 brightness-50" />
   </div>
   <div>
     <h1 class="text-3xl font-bold underline">Hello world!</h1>
@@ -22,18 +22,17 @@
     display: grid;
   }
 
-  .design-bg__img {
+  .design-bg-img {
     position: absolute;
     width: 100vw;
     height: 100vh;
 
     /*  https://css-tricks.com/perfect-full-page-background-image/ */
-    background: url(images/bg.jpg) no-repeat center center fixed;
-    background-image: url(../.archive/brief/dashboard-project.png);
+    background-image: url('../.archive/brief/dashboard-project.png');
     background-repeat: no-repeat;
-    background-size: contain; /* cover */
     background-attachment: fixed;
     background-position: center center;
+    background-size: contain; /* cover */
   }
 
   /* .logo {
