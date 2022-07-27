@@ -27,6 +27,9 @@ module.exports = {
     'tailwind.config.*',
     'postcss.config.*',
     'commitlint.config.*',
+    'playwright.config.*',
+    'tests/*',
+    'tests-example/*',
   ],
   rules: {
     'import/no-extraneous-dependencies': [
