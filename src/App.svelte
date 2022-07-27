@@ -1,20 +1,19 @@
 <script lang="ts">
-  // import svelteLogo from './assets/svelte.svg';
-  // import Counter from './lib/Counter.svelte';
+  import Navigation from './lib/components/Navigation.svelte';
 </script>
 
+<aside class="grid grid-flow-row">
+  <Navigation />
+</aside>
 <main>
   <div class="design-bg">
     <div class="design-bg-img -z-50 brightness-50" />
   </div>
-  <div>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </div>
 </main>
 
-<style>
+<style lang="postcss">
   main {
-    /* width: min(100% - 2rem, 80vw); */
+    width: min(100% - 2rem, 80vw);
   }
 
   .design-bg {
@@ -28,25 +27,11 @@
     height: 100vh;
 
     /*  https://css-tricks.com/perfect-full-page-background-image/ */
-    background-image: url('../.archive/brief/dashboard-project.png');
+    background-image: url('https://cdn.statically.io/gh/TheOdinProject/curriculum/main/html_css/grid-lessons/project-dashboard/dashboard-project.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: contain; /* cover */
+    opacity: 0.418;
   }
-
-  /* .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  } */
 </style>

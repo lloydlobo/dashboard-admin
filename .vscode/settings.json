@@ -1,0 +1,5 @@
+{
+  "autoHide.autoHidePanel": false
+  "css.lint.unknownAtRules": "ignore",
+  "css.customData": ["../css-data.json"]
+}
