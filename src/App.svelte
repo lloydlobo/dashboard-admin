@@ -5,6 +5,7 @@
 
 <main>
   <div>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite Logo" />
     </a>

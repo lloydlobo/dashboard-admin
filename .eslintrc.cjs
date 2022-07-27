@@ -20,7 +20,13 @@ module.exports = {
     extraFileExtensions: ['.svelte'],
   },
   plugins: ['svelte3', '@typescript-eslint'],
-  ignorePatterns: ['.eslintrc.*', 'vite.config.*', 'svelte.config.*'],
+  ignorePatterns: [
+    '.eslintrc.*',
+    'vite.config.*',
+    'svelte.config.*',
+    'tailwind.config.*',
+    'postcss.config.*',
+  ],
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
