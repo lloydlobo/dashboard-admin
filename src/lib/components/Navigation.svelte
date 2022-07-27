@@ -1,24 +1,46 @@
 <script lang="ts">
   import Logo from './Logo.svelte';
-  import { arrayLinks } from '../data/links';
+  import { arraySettings, arrayLinks } from '../data/links';
 </script>
 
-<nav class="navbar w-fit bg-blue-400 px-6">
-  <div class="logo-wrapper flex items-center">
+<nav
+  class="navbar flow flex min-h-screen w-fit flex-col  bg-blue-400 px-6 text-blue-50"
+>
+  <!--  logo -->
+  <div class="logo-wrapper mt-8 mb-10 flex">
     <Logo />
     <h1 class="text-3xl font-bold underline">Dashboard</h1>
   </div>
 
-  <div class="links flex flex-col gap-4">
-    <!-- @typescript-eslint/no-unsafe-member-access -->
-    {#each arrayLinks as link}
-      <a class="link flex items-baseline gap-6 font-bold" href="/">
-        <i>{@html link.icon.svg}</i>
-        <p class="text-lg hover:underline">{link.link.text}</p>
-      </a>
-    {/each}
+  <div class="grid gap-16">
+    <div class="links  flex flex-col gap-5 ">
+      <!-- @typescript-eslint/no-unsafe-member-access -->
+      {#each arrayLinks as link}
+        <a
+          class="link flex items-baseline gap-5 text-lg font-bold"
+          href={link.link.url}
+        >
+          <i>{@html link.icon.svg}</i>
+          <p class="text-xl hover:underline">{link.link.text}</p>
+        </a>
+      {/each}
+    </div>
+    <div class="links flex flex-1 flex-col gap-5">
+      {#each arraySettings as link}
+        <a
+          class="link flex items-baseline gap-6 text-lg font-bold"
+          href={link.link.url}
+        >
+          <i>{@html link.icon.svg}</i>
+          <p class="text-xl hover:underline">{link.link.text}</p>
+        </a>
+      {/each}
+    </div>
   </div>
 </nav>
 
 <style lang="postcss">
+  .navbar {
+    grid-template-rows: auto, repeat(auto-fill, minmax(6rem, 1fr));
+  }
 </style>

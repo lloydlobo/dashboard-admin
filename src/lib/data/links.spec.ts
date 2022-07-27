@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { arrayLinks } from './links';
+import { arraySettings, arrayLinks } from './links';
 
 function appendDivIdApp() {
   const div = document.createElement('div');

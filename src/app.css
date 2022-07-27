@@ -4,9 +4,40 @@
 
 @tailwind utilities;
 
+@layout utilities {
+  .flow > * + * {
+    @apply mb-12;
+  }
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  background-color: #70c1f004;
+  /* background-color: #70c1f004; */
+}
+
+body {
+  min-height: 100vh;
+}
+
+#app {
+  @apply grid bg-blue-100;
+  grid-template-areas:
+    'aside header'
+    'aside main'
+    'aside main'
+    'aside main';
+}
+
+aside {
+  grid-area: aside;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
 }
