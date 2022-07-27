@@ -2,7 +2,7 @@
 
 - [Vite + Svelte + TypeScript + Eslint(airbnb) + Prettier + Stylelint + Storybook(Vite)](https://zenn.dev/warugaki/scraps/b62edf8b125f3e)
 
-  - [ ] .vscode settings => fix: stylelint.validate
+  - [x] .vscode settings => fix: stylelint.validate
 
 <!-- 
 This template should help get you started developing with Svelte and TypeScript in Vite.
