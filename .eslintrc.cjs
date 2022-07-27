@@ -26,6 +26,7 @@ module.exports = {
     'svelte.config.*',
     'tailwind.config.*',
     'postcss.config.*',
+    'commitlint.config.*',
   ],
   rules: {
     'import/no-extraneous-dependencies': [
