@@ -4,9 +4,14 @@
 
   - [x] .vscode settings => fix: stylelint.validate
   - [x] tailwind @rule-unknown fix stylelint eslint [Source](https://stackoverflow.com/a/72161880)
+  - Example
 
-<!-- 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+    ```yml
+    'rules': { 'at-rule-no-unknown': [true, { 'ignoreAtRules': ['tailwind'] }] }
+    ```
+  <!-- 
+
+  This template should help get you started developing with Svelte and TypeScript in Vite.
 
 ## Recommended IDE Setup
 
@@ -46,9 +51,10 @@ HMR state preservation comes with a number of gotchas! It has been disabled by d
 
 If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
 
-```ts
+````ts
 // store.ts
 // An extremely simple external store
 import { writable } from 'svelte/store'
 export default writable(0)
 ``` -->
+````
