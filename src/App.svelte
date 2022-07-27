@@ -4,12 +4,37 @@
 </script>
 
 <main>
+  <div class="design-bg">
+    <div class="design-bg__img -z-50 brightness-50" />
+  </div>
   <div>
     <h1 class="text-3xl font-bold underline">Hello world!</h1>
   </div>
 </main>
 
 <style>
+  main {
+    /* width: min(100% - 2rem, 80vw); */
+  }
+
+  .design-bg {
+    position: relative;
+    display: grid;
+  }
+
+  .design-bg__img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /*  https://css-tricks.com/perfect-full-page-background-image/ */
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    background-image: url(../.archive/brief/dashboard-project.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+
   /* .logo {
     height: 6em;
     padding: 1.5em;
