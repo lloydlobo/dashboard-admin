@@ -2,13 +2,24 @@
 
 - [Vite + Svelte + TypeScript + Eslint(airbnb) + Prettier + Stylelint + Storybook(Vite)](https://zenn.dev/warugaki/scraps/b62edf8b125f3e)
 
-  - [x] .vscode settings => fix: stylelint.validate
-  - [x] tailwind @rule-unknown fix stylelint eslint [Source](https://stackoverflow.com/a/72161880)
-  - Example
+## Development
+
+- [x] .vscode settings => fix: stylelint.validate
+- [x] tailwind @rule-unknown fix stylelint eslint [Source](https://stackoverflow.com/a/72161880)
+- Example
 
     ```yml
     'rules': { 'at-rule-no-unknown': [true, { 'ignoreAtRules': ['tailwind'] }] }
+
     ```
+
+### Tailwindcss
+
+- Prettier + Tailwindcss plugin
+
+   ```sh
+   npm install -D prettier prettier-plugin-tailwindcss
+   ```
 
 ## Design
 
