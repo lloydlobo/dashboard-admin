@@ -53,6 +53,30 @@ export const projects = [
     title: 'ctus aut autem',
     completed: true,
   },
+  {
+    userId: 3,
+    id: 3,
+    title: 'lorem ipsum dolor aut autem',
+    completed: false,
+  },
+  {
+    userId: 4,
+    id: 4,
+    title: 'ctus  ipsum dolor sit aut aut autem',
+    completed: true,
+  },
+  {
+    userId: 5,
+    id: 5,
+    title: 'lorem Ips delectus aut autem',
+    completed: false,
+  },
+  {
+    userId: 6,
+    id: 6,
+    title: 'ut Dolor sit autem',
+    completed: true,
+  },
 ];
 // if (!result) throw new Error('result is undefined or empty');
 
