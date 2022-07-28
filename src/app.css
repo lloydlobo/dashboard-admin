@@ -27,6 +27,7 @@ body {
     'aside main'
     'aside main'
     'aside main';
+  grid-template-columns: auto 1fr;
   @apply grid bg-blue-100;
 }
 
