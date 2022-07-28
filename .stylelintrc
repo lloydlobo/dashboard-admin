@@ -6,12 +6,6 @@
     "stylelint-config-prettier"
   ],
   "rules": {
-    "at-rule-no-unknown": null,
-    "css.lint.unknownAtRules": [
-      true,
-      {
-        "ignoreAtRules": ["tailwind"]
-      }
-    ]
+    "at-rule-no-unknown": null
   }
 }

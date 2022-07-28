@@ -13,8 +13,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   /* background-color: #70c1f004; */
+  box-sizing: border-box;
 }
 
 body {
@@ -22,12 +22,12 @@ body {
 }
 
 #app {
-  @apply grid bg-blue-100;
   grid-template-areas:
     'aside header'
     'aside main'
     'aside main'
     'aside main';
+  @apply grid bg-blue-100;
 }
 
 aside {

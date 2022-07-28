@@ -44,6 +44,3 @@
     </div>
   </div>
 </header>
-
-<style lang="postcss">
-</style>

@@ -18,11 +18,10 @@
   >
 </div>
 
-<style lang="postcss">
+<style>
   .logo {
-    will-change: filter;
+    /* will-change: filter; */
     @apply p-2;
-    /* height: 6em; */ /* padding: 1.5em; */
   }
 
   .logo:hover {

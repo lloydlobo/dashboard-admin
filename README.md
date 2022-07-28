@@ -67,6 +67,12 @@
    npm install -D prettier prettier-plugin-tailwindcss
    ```
 
+### Linting
+
+#### Stylelint
+
+- [Rules](https://stylelint.io/user-guide/rules/list/)
+
 ## Design
 
 ### Theme
