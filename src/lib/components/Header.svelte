@@ -2,11 +2,20 @@
   import UserName from './UserName.svelte';
   import UserAvatar from './UserAvatar.svelte';
   import SearchBar from './Search.svelte';
+  import IconSearch from './icons/IconSearch.svelte';
 </script>
 
 <header>
   <div class="header shadow-xl">
-    <SearchBar />
+    <div class="header-nav flex">
+      <SearchBar />
+
+      <div class="header-nav-icons flex">
+    <div class="icon relative h-6 w-6 fill-slate-500 text-xs">
+        <IconSearch />
+        </div>
+      </div>
+    </div>
 
     <div class="wrapper-user flex items-center gap-2 p-4 text-4xl">
       <UserAvatar />
