@@ -1,27 +1,26 @@
 <script lang="ts">
   import Header from './lib/components/Header.svelte';
   import Navigation from './lib/components/Navigation.svelte';
-  import { projects, URL_TODO } from './lib/stores/projectsStore';
+  import { projects } from './lib/stores/projectsStore';
 
-  const user = {
-    firstname: 'Ada',
-    lastname: 'Lovelace',
-  };
-
-  let data:
-    | { userId: number; id: number; title: string; completed: boolean }[]
-    | ProjectType[];
-
-  const arrayData = [];
-  type ProjectType = {
-    userId: number;
-    id: number;
-    title: string;
-    completed: boolean;
-  };
-
+  //   const user = {
+  //     firstname: 'Ada',
+  //     lastname: 'Lovelace',
+  //   };
+  //
+  //   let data:
+  //     | { userId: number; id: number; title: string; completed: boolean }[]
+  //     | ProjectType[];
+  //
+  //  type ProjectType = {
+  //    userId: number;
+  //    id: number;
+  //    title: string;
+  //    completed: boolean;
+  //  };
   // const url = URL_TODO as string;
 
+  const arrayData = [];
   arrayData.push(projects);
 </script>
 
