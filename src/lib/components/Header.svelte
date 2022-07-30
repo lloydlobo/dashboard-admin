@@ -1,19 +1,22 @@
 <script lang="ts">
   import UserName from './UserName.svelte';
   import UserAvatar from './UserAvatar.svelte';
+  import IconSearch from './icons/IconSearch.svelte';
 </script>
 
 <header>
   <div class="header shadow-xl">
-    <div
-      class="search m-2 flex w-fit  items-center gap-4 rounded-full bg-neutral-50 py-4 px-8"
-    >
+    <div class="search relative m-2 flex w-80 items-center">
       <input
         type="search"
         placeholder="Search ..."
-        class="rounded-xl bg-neutral-100 p-2"
+        class="bg-white-100 relative w-full rounded-full py-4 px-6"
       />
-      <button class="h-8 w-8  rounded-full bg-blue-400">0</button>
+      <button class="relative -left-12 rounded-full">
+        <div class="icon relative h-6 w-6 fill-slate-500 text-xs">
+          <IconSearch />
+        </div>
+      </button>
     </div>
 
     <div class="wrapper-user flex items-center gap-2 p-4 text-4xl">
@@ -25,3 +28,10 @@
     </div>
   </div>
 </header>
+
+<!-- https://natclark.com/tutorials/svelte-working-with-svgs/ -->
+<style>
+  header {
+    grid-area: header;
+  }
+</style>

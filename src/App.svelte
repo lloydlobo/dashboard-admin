@@ -40,7 +40,8 @@
   <div class="projects grid grid-flow-col grid-rows-3 gap-4 p-4">
     {#each projects as { userId, id, title, completed }}
       <div
-        class="project grid max-w-sm cursor-pointer break-words rounded-lg border-r-4  border-l-4  border-amber-300 bg-white p-4 leading-snug shadow-md duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl"
+        class="project grid max-w-sm cursor-pointer break-words rounded-lg border-r-4  border-l-4  
+        border-amber-300 bg-white p-4 leading-snug shadow-md duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl"
       >
         <h3 class="project-title text-xl font-bold uppercase">{title}</h3>
         <p class="project-title ">{title + title + title}</p>
