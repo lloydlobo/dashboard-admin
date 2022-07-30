@@ -21,7 +21,7 @@
     "fix:stylelint": "stylelint --fix --ignore-path .gitignore ./**/*.{css,svelte}",
     "lint:all": "run-s lint:eslint lint:stylelint lint:prettier",
     "fix:all": "run-s fix:eslint fix:stylelint fix:prettier",
-    "prepare": "husky install",
+    "prepare": "husky install && chmod ug+x .husky/*",
     "test:e2e": "npx playwright test",
     "test:debug": "npm run test:e2e -- --debug",
     "test:codegen": "npx playwright codegen",
