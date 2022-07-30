@@ -2,17 +2,21 @@
   import UserName from './UserName.svelte';
   import UserAvatar from './UserAvatar.svelte';
   import IconSearch from './icons/IconSearch.svelte';
+
+  function handleSearch() {
+  console.log('search clicked');
+  }
 </script>
 
 <header>
   <div class="header shadow-xl">
-    <div class="search relative m-2 flex w-80 items-center">
+    <div class="search relative m-2 flex w-auto items-center">
       <input
         type="search"
         placeholder="Search ..."
         class="bg-white-100 relative w-full rounded-full py-4 px-6"
       />
-      <button class="relative -left-12 rounded-full">
+      <button on:click={handleSearch} class="relative -left-12 rounded-full">
         <div class="icon relative h-6 w-6 fill-slate-500 text-xs">
           <IconSearch />
         </div>
