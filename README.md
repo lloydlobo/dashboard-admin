@@ -2,6 +2,28 @@
 
 - [Vite + Svelte + TypeScript + Eslint(airbnb) + Prettier + Stylelint + Storybook(Vite)](https://zenn.dev/warugaki/scraps/b62edf8b125f3e)
 
+## NVim
+
+### Split terminals
+
+https://vi.stackexchange.com/questions/19209/neovim-with-split-integrated-terminal-repl
+
+```sh
+:split | terminal
+:vsplit | terminal
+```
+- Or you can use the shorter 
+
+    ```sh
+    :vs | te 
+    :vs +te.
+    ```
+
+- and you can assign maps for that like:
+    ```sh
+    nmap <C-S-P> :split | terminal <CR>
+    ```
+
 ## Brief
 
 ### Preview
@@ -10,7 +32,7 @@
 
 ### Assignment
 
-[Link](<https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard>)
+[Link](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
 
 #### Step 1: Set Up and Planning
 
@@ -52,20 +74,19 @@
 - [x] tailwind @rule-unknown fix stylelint eslint [Source](https://stackoverflow.com/a/72161880)
 - Example
 
-    ```yml
-    'rules': { 'at-rule-no-unknown': [true, { 'ignoreAtRules': ['tailwind'] }] }
+  ```yml
+  'rules': { 'at-rule-no-unknown': [true, { 'ignoreAtRules': ['tailwind'] }] }
+  ```
 
-    ```
-
-    [More](https://github.com/tailwindlabs/tailwindcss/discussions/5258)
+  [More](https://github.com/tailwindlabs/tailwindcss/discussions/5258)
 
 ### Tailwindcss
 
 - Prettier + Tailwindcss plugin
 
-   ```sh
-   npm install -D prettier prettier-plugin-tailwindcss
-   ```
+  ```sh
+  npm install -D prettier prettier-plugin-tailwindcss
+  ```
 
 ### Linting
 
@@ -82,7 +103,7 @@
 - Icons
   - [Material Design Icons](https://materialdesignicons.com/)
 
-<!-- 
+<!--
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
@@ -126,5 +147,5 @@ If you have state that's important to retain within a component, consider creati
 // An extremely simple external store
 import { writable } from 'svelte/store'
 export default writable(0)
-``` 
+```
 ```` -->

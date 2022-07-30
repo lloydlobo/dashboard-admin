@@ -3,8 +3,11 @@
   import UserAvatar from './UserAvatar.svelte';
   import IconSearch from './icons/IconSearch.svelte';
 
+  let searchBar: HTMLInputElement;
   function handleSearch() {
-  console.log('search clicked');
+    if (searchBar.value === '') {
+      searchBar.focus();
+    }
   }
 </script>
 
@@ -12,6 +15,7 @@
   <div class="header shadow-xl">
     <div class="search relative m-2 flex w-auto items-center">
       <input
+        bind:this={searchBar}
         type="search"
         placeholder="Search ..."
         class="bg-white-100 relative w-full rounded-full py-4 px-6"
