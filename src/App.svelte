@@ -1,11 +1,9 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { identity } from 'svelte/internal';
   import Header from './lib/components/Header.svelte';
   import Navigation from './lib/components/Navigation.svelte';
   import { projects, URL_TODO } from './lib/stores/projectsStore';
 
-  let user = {
+  const user = {
     firstname: 'Ada',
     lastname: 'Lovelace',
   };
@@ -14,7 +12,7 @@
     | { userId: number; id: number; title: string; completed: boolean }[]
     | ProjectType[];
 
-  let arrayData = [];
+  const arrayData = [];
   type ProjectType = {
     userId: number;
     id: number;
@@ -22,34 +20,13 @@
     completed: boolean;
   };
 
-  const url = URL_TODO as string;
+  // const url = URL_TODO as string;
 
   arrayData.push(projects);
-
-  // async function fetchProjects() {
-  //   const results = fetch(url)
-  //     .then((response: Response) => response.json())
-  //     .then((json: ProjectType[]) => {
-  //       console.log(json);
-  //       data = json;
-  //       arrayData.push(data);
-  //       console.log(arrayData);
-  //       return data;
-  //     })
-  //     .catch((err: string) => {
-  //       throw new Error(err);
-  //     });
-
-  //   const res = await Promise.resolve(results);
-
-  //   return res;
-  //   // return Promise.resolve(res);
-  // }
-  // onMount(fetchProjects);
 </script>
 
 <!-- TODO Delete after production -->
-<div class="design-bg hidden opacity-25 ">
+<div class="design-bg pointer-events-none absolute z-10 w-screen opacity-10">
   <div class="design-bg-img" />
 </div>
 
@@ -80,21 +57,18 @@
 </main>
 
 <style>
-  .design-bg {
-    position: relative;
-  }
-
   .design-bg-img {
-    position: absolute;
-    width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 100vh;
 
     /*  https://css-tricks.com/perfect-full-page-background-image/ */
     background-image: url('https://cdn.statically.io/gh/TheOdinProject/curriculum/main/html_css/grid-lessons/project-dashboard/dashboard-project.png');
-
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+
+    /* background-position: center center; */
     background-size: contain;
   }
 </style>
