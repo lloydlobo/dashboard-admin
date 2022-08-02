@@ -2,7 +2,7 @@
   import UserName from './UserName.svelte';
   import UserAvatar from './UserAvatar.svelte';
   import SearchBar from './Search.svelte';
-  import IconNotify from './icons/IconNotify.svelte';
+  import NavbarUserIcons from './NavbarUserIcons.svelte';
 </script>
 
 <header>
@@ -11,26 +11,10 @@
       <div class="flex-1">
         <SearchBar />
       </div>
-
       <div class="header-nav-icons flex px-4">
-        <div
-          class="icon relative flex items-center gap-4 fill-slate-500 text-xs"
-        >
-          <button class="icon-notification relative h-6 w-6 fill-amber-500">
-            <IconNotify />
-          </button>
-          <button class="icon-user-avatar relative fill-amber-500">
-            <UserAvatar />
-          </button>
-          <button
-            class="icon-user-name relative fill-amber-500 text-lg font-medium"
-          >
-            <UserName classAtUserName="hidden" />
-          </button>
-        </div>
+        <NavbarUserIcons />
       </div>
     </div>
-
     <div class="wrapper-user flex items-center gap-2 p-4 text-4xl">
       <UserAvatar />
       <div class="user-body flex flex-col">
