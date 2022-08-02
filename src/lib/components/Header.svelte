@@ -7,10 +7,12 @@
 
 <header>
   <div class="header shadow-xl">
-    <div class="header-nav flex">
-      <SearchBar />
+    <div class="header-nav flex gap-4 px-4 pt-2">
+      <div class="flex-1">
+        <SearchBar />
+      </div>
 
-      <div class="header-nav-icons flex">
+      <div class="header-nav-icons flex px-4">
         <div
           class="icon relative flex items-center gap-4 fill-slate-500 text-xs"
         >
@@ -20,8 +22,10 @@
           <button class="icon-user-avatar relative fill-amber-500">
             <UserAvatar />
           </button>
-          <button class="icon-user-name relative fill-amber-500">
-            <UserName />
+          <button
+            class="icon-user-name relative fill-amber-500 text-lg font-medium"
+          >
+            <UserName classAtUserName="hidden" />
           </button>
         </div>
       </div>

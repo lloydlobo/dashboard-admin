@@ -8,7 +8,9 @@
 </script>
 
 <!-- TODO Delete after production -->
-<div class="design-bg pointer-events-none absolute z-10 w-screen opacity-10">
+<div
+  class="design-bg pointer-events-none absolute z-10 hidden w-screen opacity-10"
+>
   <div class="design-bg-img" />
 </div>
 
