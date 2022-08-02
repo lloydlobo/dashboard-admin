@@ -23,16 +23,20 @@ body {
 
 #app {
   grid-template-areas:
-    'aside header'
-    'aside main'
-    'aside main'
-    'aside main';
-  grid-template-columns: auto 1fr;
+    'aside header header'
+    'aside main sidebar'
+    'aside main sidebar'
+    'aside main sidebar';
+  grid-template-columns: auto 4fr 1fr;
   @apply grid bg-blue-100;
 }
 
 aside {
   grid-area: aside;
+}
+
+aside.sidebar {
+  grid-area: sidebar;
 }
 
 header {

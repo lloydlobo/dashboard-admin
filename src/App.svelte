@@ -1,6 +1,7 @@
 <script lang="ts">
   import Header from './lib/components/Header.svelte';
   import Navigation from './lib/components/Navigation.svelte';
+import SidebarCards from './lib/components/SidebarCards.svelte';
   import { projects } from './lib/stores/projectsStore';
 
   const arrayData = [];
@@ -8,9 +9,7 @@
 </script>
 
 <!-- TODO Delete after production -->
-<div
-  class="design-bg pointer-events-none absolute z-10 w-screen opacity-10"
->
+<div class="design-bg pointer-events-none absolute z-10 w-screen opacity-10">
   <div class="design-bg-img" />
 </div>
 
@@ -41,6 +40,11 @@
   </div>
 </main>
 
+<aside class="sidebar px-4">
+  <SidebarCards title="Announcements" />
+  <SidebarCards title="Trending"/>
+</aside>
+
 <style>
   .design-bg-img {
     top: 0;
@@ -55,5 +59,16 @@
 
     /* background-position: center center; */
     background-size: contain;
+  }
+
+  aside.sidebar {
+    grid-area: sidebar;
+  }
+
+  .card {
+    @apply border-b border-solid border-gray-400 p-2 pb-4 text-xs;
+  }
+  .card > h4 {
+    @apply mb-2;
   }
 </style>
