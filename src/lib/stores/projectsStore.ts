@@ -1,5 +1,5 @@
+/* stylelint-disable CssSyntaxError */
 /* eslint-disable no-console */
-import { type Writable, writable } from 'svelte/store';
 
 type ProjectType = {
   userId: number;
@@ -9,7 +9,7 @@ type ProjectType = {
 };
 
 let data: ProjectType[];
-let result: ProjectType[];
+// let result: ProjectType[];
 
 export const URL_TODO = `https://jsonplaceholder.typicode.com/todos/1`;
 
@@ -31,14 +31,14 @@ export async function fetchDataTodo(): Promise<ProjectType[]> {
   // return Promise.resolve(res);
 }
 
-fetchDataTodo()
-  .then((response) => {
-    result = response;
-    console.log(result);
-  })
-  .catch((err: string) => {
-    throw new Error(err);
-  });
+// fetchDataTodo()
+//   .then((response) => {
+//     result = response;
+//     console.log(result);
+//   })
+//   .catch((err: string) => {
+//     throw new Error(err);
+//   });
 
 export const projects = [
   {
