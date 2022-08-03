@@ -14,7 +14,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  
+
   /* background-color: #1011f030; */
 }
 
@@ -30,7 +30,6 @@ body {
     'aside main sidebar';
   grid-template-columns: auto 2fr 1fr;
   @apply grid bg-blue-100;
-  
 }
 
 aside {
@@ -50,6 +49,7 @@ main {
   grid-area: main;
 }
 
-aside.sidebar, main{
+aside.sidebar,
+main {
   @apply ml-2;
 }

@@ -32,13 +32,11 @@
 </div>
 
 <style>
-
   .card {
     @apply border-b border-solid border-gray-400 p-2 pb-4 text-xs;
   }
+
   .card .card-title {
     @apply mb-2;
   }
-
-
 </style>

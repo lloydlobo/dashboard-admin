@@ -39,6 +39,7 @@ module.exports = {
       },
     ],
     'import/no-mutable-exports': 'off',
+    'import/prefer-default-export': 'off',
   },
   overrides: [
     {

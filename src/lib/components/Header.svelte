@@ -6,7 +6,7 @@
 </script>
 
 <header>
-  <div class="header shadow-xl pt-4 pb-1 px-8">
+  <div class="header px-8 pt-4 pb-1 shadow-xl">
     <div class="header-nav flex gap-4 pt-2">
       <div class="flex-1">
         <SearchBar />
@@ -16,7 +16,9 @@
       </div>
     </div>
 
-    <div class="wrapper-user flex items-center justify-items-end gap-2 py-4 mb-4">
+    <div
+      class="wrapper-user mb-4 flex items-center justify-items-end gap-2 py-4"
+    >
       <div class="user flex w-full gap-2">
         <UserAvatar />
         <div class="grid grid-cols-2 items-center ">
