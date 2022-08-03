@@ -8,7 +8,7 @@
   const { FIRST_NAME, MIDDLE_NAME, LAST_NAME } = user.name;
 </script>
 
-<div class="user flex gap-x-2 md:text-xl">
+<div class="user flex gap-x-2 text-lg font-bold sm:text-2xl">
   <div class="user-fullname">
     {FIRST_NAME}
     {MIDDLE_NAME}

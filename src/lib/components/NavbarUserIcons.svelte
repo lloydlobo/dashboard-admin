@@ -9,7 +9,7 @@
     <IconNotify />
   </button>
   <button class="icon-user-avatar relative fill-amber-500">
-    <UserAvatar />
+    <UserAvatar classAvatar={'text-2xl'} />
   </button>
   <button class="icon-user-name relative fill-amber-500 text-lg font-medium">
     <UserName classAtUserName="hidden" />
