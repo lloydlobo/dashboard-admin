@@ -1,6 +1,5 @@
 /* stylelint-disable-next-line CssSyntaxError */
 import { test, expect, type Locator } from '@playwright/test';
-// import {arrayLinks, arraySettings} from '../src/lib/data/links'
 
 type LinkType = { id: number; text: string; url: string; alt: string };
 type IconType = { id: number; svg: string; alt: string };
@@ -93,7 +92,7 @@ const el: LinkType[] = arraySettings.map((e) => e.link);
 const elcopy = el;
 if (!el) throw new Error();
 
-test('homepage has DashAdmin in title and all the links link to their pages', async ({
+test('homepage has DashAdmin in title and all the settings link link to their pages', async ({
   page,
 }): Promise<void> => {
   await page.goto('/');
@@ -102,6 +101,29 @@ test('homepage has DashAdmin in title and all the links link to their pages', as
 
   for (let i = 0; i < arraySettings.length; i += 1) {
     const res = elcopy[i];
+    const resText = res.text;
+    const resUrl = res.url;
+    // console.log(resText, resUrl);
+    const link: Locator = page.locator(`text=${resText}`);
+    // Expect an attribute "to be strictly equal" to the value.
+    await expect(link).toHaveAttribute('href', resUrl);
+    // console.log(link, resUrl);
+  }
+});
+
+const arrLinks: LinkType[] = arraySettings.map((e) => e.link);
+const arrLinksCopy = arrLinks;
+if (!arrLinks) throw new Error();
+
+test('homepage has DashAdmin in title and all the navigation links link to their pages', async ({
+  page,
+}): Promise<void> => {
+  await page.goto('/');
+  // Expect a title "to contain" a substring.
+  await expect(page).toHaveTitle(/DashAdmin/);
+
+  for (let i = 0; i < arraySettings.length; i += 1) {
+    const res = arrLinksCopy[i];
     const resText = res.text;
     const resUrl = res.url;
     // console.log(resText, resUrl);
