@@ -50,8 +50,6 @@ aside.sidebar {
   @apply mr-2;
 
   grid-area: sidebar;
-
-  /* grid-row: span 2; */
 }
 
 header {
@@ -60,8 +58,6 @@ header {
 
 main {
   grid-area: main;
-
-  /* grid-row: span 3; */
 }
 
 aside.sidebar,
