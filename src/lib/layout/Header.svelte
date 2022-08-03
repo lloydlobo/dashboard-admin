@@ -1,8 +1,8 @@
 <script lang="ts">
-  import UserName from './UserName.svelte';
-  import UserAvatar from './UserAvatar.svelte';
-  import SearchBar from './Search.svelte';
-  import NavbarUserIcons from './NavbarUserIcons.svelte';
+  import NavbarUserIcons from '../components/icons/NavbarUserIcons.svelte';
+  import SearchBar from '../components/SearchBar.svelte';
+  import UserAvatar from '../components/users/UserAvatar.svelte';
+  import UserName from '../components/users/UserName.svelte';
 </script>
 
 <header class="bg-white">

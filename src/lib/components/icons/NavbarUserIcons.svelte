@@ -1,7 +1,7 @@
 <script>
-  import IconNotify from './icons/IconNotify.svelte';
-  import UserAvatar from './UserAvatar.svelte';
-  import UserName from './UserName.svelte';
+  import UserAvatar from '../users/UserAvatar.svelte';
+  import UserName from '../users/UserName.svelte';
+  import IconNotify from './IconNotify.svelte';
 </script>
 
 <div class="icon relative flex items-center gap-4 fill-slate-500 text-xs">

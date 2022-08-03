@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { queryUser } from '../data/users';
+  import { queryUser } from '../../data/users';
 
   export let classAvatar = 'text-6xl';
 
