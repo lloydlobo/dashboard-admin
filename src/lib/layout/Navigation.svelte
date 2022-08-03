@@ -1,6 +1,8 @@
 <script lang="ts">
   import Logo from '../components/icons/Logo.svelte';
   import { arraySettings, arrayLinks } from '../data/links';
+
+  const title = `Dashboard`;
 </script>
 
 <aside class="grid grid-flow-row">
@@ -8,9 +10,15 @@
     class="navbar flow flex min-h-screen w-full flex-col  bg-blue-400 px-6 text-blue-50"
   >
     <!--  logo -->
-    <div class="logo-wrapper mt-8 mb-10 flex">
-      <Logo />
-      <h1 class="text-3xl font-bold underline">Dashboard</h1>
+    <div
+      class="logo-wrapper mt-8 mb-10 flex origin-center items-center duration-500 ease-in-out hover:scale-105 hover:text-amber-400 hover:ease-linear"
+    >
+      <a href="/" class="logo-icon" alt={title}>
+        <Logo />
+      </a>
+      <h1 class="text-3xl font-bold">
+        <a href="/" class="logo">{title}</a>
+      </h1>
     </div>
 
     <div class="grid gap-16">
