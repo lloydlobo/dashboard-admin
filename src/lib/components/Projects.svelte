@@ -1,23 +1,29 @@
-<script>
+<script lang="ts">
   import { projects } from '../stores/projectsStore';
+  import ProjectIcons from './ProjectIcons.svelte';
 </script>
 
 <div class="projects-cards grid grid-flow-col gap-8">
   {#each projects as { userId, id, title, completed }}
     <div
-      class="
-          project grid h-20 cursor-pointer break-words rounded-lg border-l-4 border-amber-300 bg-white p-4 leading-snug shadow-md duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl md:h-52"
+      class=" project
+      grid
+      cursor-pointer
+      break-words
+      rounded-lg
+      border-l-4
+      border-amber-300
+      bg-white
+      p-4
+      leading-snug
+      shadow-md
+      duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl "
     >
       <h3 class="project-title text-xl font-bold uppercase">{title}</h3>
       <p class="project-title ">{title + title + title}</p>
       <p class="projectId underline">{userId} {new Date().getFullYear()}</p>
 
-      <div class="icons actions flex items-end justify-end gap-4">
-        <span class="cursor-pointer font-bold hover:shadow-md">{id}</span>
-        <div class="status cursor-pointer rounded font-bold hover:shadow-md">
-          {completed}
-        </div>
-      </div>
+      <ProjectIcons {completed} {id} />
     </div>
   {/each}
 </div>
