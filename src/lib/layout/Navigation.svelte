@@ -31,11 +31,11 @@
       <div class="links flex flex-1 flex-col gap-5">
         {#each arraySettings as { link, icon }}
           <a
-            class="link flex items-baseline gap-6 text-lg font-bold"
+            class="link flex items-baseline gap-6 text-xl font-bold hover:underline"
             href={link.url}
           >
             <i>{@html icon.svg}</i>
-            <p class="text-xl hover:underline">{link.text}</p>
+            {link.text}
           </a>
         {/each}
       </div>
