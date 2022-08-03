@@ -1,7 +1,6 @@
-/* stylelint-disable-next-line CssSyntaxError */
 import { test, expect } from '@playwright/test';
 
-test('homepage has Playwright in title and get started link linking to the intro page', async ({
+test('homepage has DashAdmin in title and `settings` link linking to the settings page', async ({
   page,
 }) => {
   await page.goto('/');
