@@ -1,11 +1,9 @@
 <script>
-  export let title = 'Announcements';
 </script>
 
 <div class="sidecard flow">
-  <h3 class="mb-2 px-1 text-xl font-medium">{title}</h3>
   <div
-    class="cards grid grid-rows-3 gap-4 rounded-md bg-white p-2 px-4 shadow-xl"
+    class="cards grid grid-rows-3 gap-2 rounded-md bg-white p-2 px-4 pt-6 shadow-xl"
   >
     <div class="card">
       <h4 class="card-title font-bold">Site Maintenance</h4>
@@ -33,7 +31,7 @@
 
 <style>
   .card {
-    @apply border-b border-solid border-gray-400 p-2 pb-4 text-xs;
+    @apply mx-4 mb-6 border-b border-solid border-gray-200 pb-6 text-xs;
   }
 
   .card .card-title {

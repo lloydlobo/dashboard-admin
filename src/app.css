@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
 @tailwind base;
 
 @tailwind components;
@@ -23,22 +24,34 @@ body {
 }
 
 #app {
+  @apply bg-blue-100;
+
+  display: grid;
   grid-template-areas:
     'aside header header'
     'aside main sidebar'
     'aside main sidebar'
-    'aside main sidebar';
-  grid-template-columns: auto 2fr 1fr;
-  @apply grid bg-blue-100;
+    'aside main sidebar'
+    'aside footer footer';
+  grid-template-rows: auto repeat(2, 1fr);
+  grid-template-columns: 2fr 8fr 2fr;
 }
 
 aside {
   grid-area: aside;
 }
 
+footer {
+  grid-area: footer;
+  min-width: 100%;
+}
+
 aside.sidebar {
-  grid-area: sidebar;
   @apply mr-2;
+
+  grid-area: sidebar;
+
+  /* grid-row: span 2; */
 }
 
 header {
@@ -47,6 +60,8 @@ header {
 
 main {
   grid-area: main;
+
+  /* grid-row: span 3; */
 }
 
 aside.sidebar,

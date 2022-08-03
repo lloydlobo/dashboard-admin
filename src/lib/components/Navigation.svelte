@@ -4,7 +4,7 @@
 </script>
 
 <nav
-  class="navbar flow flex min-h-screen w-fit flex-col  bg-blue-400 px-6 text-blue-50"
+  class="navbar flow flex min-h-screen w-full flex-col  bg-blue-400 px-6 text-blue-50"
 >
   <!--  logo -->
   <div class="logo-wrapper mt-8 mb-10 flex">
