@@ -6,27 +6,30 @@
 </script>
 
 <header>
-  <div class="header shadow-xl">
-    <div class="header-nav flex gap-4 px-4 pt-2">
+  <div class="header shadow-xl pt-4 pb-1 px-8">
+    <div class="header-nav flex gap-4 pt-2">
       <div class="flex-1">
         <SearchBar />
       </div>
-      <div class="header-nav-icons flex px-4">
+      <div class="header-nav-icons flex">
         <NavbarUserIcons />
       </div>
     </div>
-    <div class="wrapper-user flex items-center gap-2 p-4 text-4xl">
-      <UserAvatar />
-      <div class="grid grid-cols-2 justify-between  w-screen items-center">
-        <div class="user-body flex bg-neutral-50 flex-col w-fit">
-          <span class="greeting text-base font-bold">Hi there,</span>
-          <UserName />
+
+    <div class="wrapper-user flex items-center justify-items-end gap-2 py-4 mb-4">
+      <div class="user flex w-full gap-2">
+        <UserAvatar />
+        <div class="grid grid-cols-2 items-center ">
+          <div class="user-body flex w-fit flex-col">
+            <span class="greeting text-base font-bold">Hi there,</span>
+            <UserName />
+          </div>
         </div>
-        <div class="btn-crud grid h-fit w-fit grid-cols-3 items-end gap-4">
-          <button class="btn">New</button>
-          <button class="btn">Upload</button>
-          <button class="btn">Share</button>
-        </div>
+      </div>
+      <div class="btn-crud grid h-fit w-fit grid-cols-3 items-end gap-4">
+        <button class="btn">New</button>
+        <button class="btn">Upload</button>
+        <button class="btn">Share</button>
       </div>
     </div>
   </div>

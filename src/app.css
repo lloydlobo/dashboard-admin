@@ -13,8 +13,9 @@
 *,
 *::before,
 *::after {
-  /* background-color: #70c1f004; */
   box-sizing: border-box;
+  
+  /* background-color: #1011f030; */
 }
 
 body {
@@ -27,8 +28,9 @@ body {
     'aside main sidebar'
     'aside main sidebar'
     'aside main sidebar';
-  grid-template-columns: auto 4fr 1fr;
+  grid-template-columns: auto 2fr 1fr;
   @apply grid bg-blue-100;
+  
 }
 
 aside {
@@ -37,6 +39,7 @@ aside {
 
 aside.sidebar {
   grid-area: sidebar;
+  @apply mr-2;
 }
 
 header {
@@ -45,4 +48,8 @@ header {
 
 main {
   grid-area: main;
+}
+
+aside.sidebar, main{
+  @apply ml-2;
 }

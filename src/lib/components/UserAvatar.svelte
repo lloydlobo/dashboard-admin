@@ -6,7 +6,7 @@
 </script>
 
 <div class="user-avatar">
-  <div class="avatar">
+  <div class="avatar text-4xl">
     <div
       class="avatar-bg relative flex rounded-full bg-yellow-400 object-contain"
     >
